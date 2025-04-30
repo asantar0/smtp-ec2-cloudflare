@@ -1,3 +1,4 @@
+#AWS 
 variable "availability_zone" {
   description = "Zone used to deploy ec2 instance"
   type        = string
@@ -20,4 +21,23 @@ variable "ssh_key" {
   description = "SSH Key used for login via CLI"
   type        = string
   default     = "personal-key"
+}
+
+#Cloudflare
+variable "zone_id" {
+  default   = ""
+  type      = string
+  sensitive = true
+}
+
+variable "domain" {
+  default   = ""
+  type      = string
+  sensitive = true
+}
+
+variable "api_token" {
+  default   = ""
+  type      = string
+  sensitive = true
 }

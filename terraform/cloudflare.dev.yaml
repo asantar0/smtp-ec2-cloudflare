@@ -1,0 +1,19 @@
+api_token: ENC[AES256_GCM,data:RzW+A+BUgWiI5yTx5H627GS3URSWiu5TDFxwfr1xQ0PGpfwuYQ1Mqw==,iv:vpqXempz3OHZ5GQlFS2DthGyke0iXP9klzBF5E+Olsc=,tag:XEkwEDWw4HWhjLuklgtI4w==,type:str]
+zone_id: ENC[AES256_GCM,data:NaytMsuECRVncdnIEH/h2Leq5VSw6fbCpZlp3eGvgRY=,iv:qIW6c5wxJCUeLkMtMDFJy4CAgNBUfdvPIsGnRVd92Cc=,tag:L+OU8Wy4hzQXMDOgeHTF0g==,type:str]
+domain: ENC[AES256_GCM,data:QZFOajGwqoXRjcFuGnIImw==,iv:GkLg/U9Esg4ZgXl/+UkK7CmP3KUFX78blBVwPaLb/1s=,tag:oNanVebW4ccR1EbjgRwh6g==,type:str]
+sops:
+    pgp:
+        - created_at: "2025-04-03T16:05:10Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hF4D1bSOhSOOhw4SAQdAhxd0gO6InEmeMiHzwk/zcznB8bo5xE2SR08Pw2LDYiIw
+            IwDmE8fDsdrK3d4gfKR05a6b4e/nHJsvDy4eNof5jHaWFCMdDfb6x5cvfWCrcijw
+            1GgBCQIQz903rFMzYgbdqU+YYLdAxWsxZz3imSEZ8ejZHAZtXq+NDoxVTx7Drle0
+            JuAkPkPDHVQ4srPzgDmXfBF3GsGETJJ+MMu3HkW+X3es4PRxcOqOKYqWVFN3i2eP
+            kK6xSrV2aV1YBg==
+            =uiyU
+            -----END PGP MESSAGE-----
+          fp: EE772A8C739181D6FFEBC7DC750ADA0AD9539C82
+    unencrypted_suffix: _unencrypted
+    version: 3.10.1
