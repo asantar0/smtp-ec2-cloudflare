@@ -112,16 +112,16 @@ resource "aws_network_interface" "DMZ-Server-NIC" {
 }
 
 #Step 8 - Assign an elastic IP to the network interface create in Step 7 (public IPV4 address)
-resource "aws_eip" "DMZ-Server-EIP" {
+resource "aws_eip" "SMTP-Server-EIP" {
   domain   = "vpc"
-  instance = aws_instance.DMZ-Server-instance.id
-  #network_interface         = aws_network_interface.DMZ-Server-NIC.id
+  instance = aws_instance.SMTP-Server-instance.id
+  #network_interface         = aws_network_interface.SMTP-Server-NIC.id
   #associate_with_private_ip = "10.254.254.254"
-  #depends_on                = [aws_internet_gateway.DMZ_IGW]
+  #depends_on                = [aws_internet_gateway.SMTP_IGW]
 }
 
 #Step 9 - Create an Ubuntu server 
-resource "aws_instance" "DMZ-Server-instance" {
+resource "aws_instance" "SMTP-Server-instance" {
   ami               = var.ami_system
   instance_type     = var.instance_type
   availability_zone = var.availability_zone
